@@ -1,19 +1,19 @@
 ---
 graphics: yes
-name: JooYoung
-surname: Seo
+name: Irene
+surname: Rodríguez
 headcolor: 414141
 #qualifications: 
-position: "Ph.D."
-address: "614 E. Daniel St. | Room 5158, Champaign, IL 61820"
-phone: "+1 217-333-2671"
-www: jooyoungseo.github.io
-email: "jseo1005@illinois.edu"
-twitter: seo_jooyoung
-github: jooyoungseo
-linkedin: jooyoungseo
-aboutme: |
-  I am a learning scientist, data-science/software engineer, and internationally certified accessibility professional.
+position: "Ph.D. Candidate"
+address: "25-27 Ramón Trias Fargas St. | Room 20.135, 08005 Barcelona, Spain"
+phone: "+34 636 600 144"
+www: irenerodriguezlopez.github.io
+email: "irene.rodriguez@upf.edu"
+twitter: irewrl
+github: irenerodriguezlopez
+linkedin: irenerodriguezlopez
+# aboutme: |
+#   Something.
 date: '`r format(Sys.Date(), "%B %d, %Y")`'
 csl: "csl/apa6-cv.csl"
 nocite: "@*"
@@ -30,8 +30,8 @@ bibliography_healthcare: "bib/healthcare.bib"
 bibliography_working_paper: "bib/working_paper.bib"
 bibliography_R_packages: "bib/R_packages.bib"
 bibliography_github_projects: "bib/github.bib"
-#given-name-pattern: JooYoung
-#family-name-pattern: Seo
+#given-name-pattern: Irene
+#family-name-pattern: Rodríguez
 ---
 
 ```{r setup, include=FALSE, cache = FALSE}
