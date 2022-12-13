@@ -1,0 +1,276 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+%
+% Adapted to be an Rmarkdown template by Mitchell O'Hara-Wild
+% 23 November 2018
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt,a4paper,]{awesome-cv}
+
+% Configure page margins with geometry
+\usepackage{geometry}
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+
+\definecolor{awesome}{HTML}{414141}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\def\endfirstpage{\newpage}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+
+\name{Irene}{Rodríguez}
+
+\position{PhD Candidate}
+\address{Department of Political and Social Sciences, Universitat Pompeu
+Fabra, Barcelona}
+
+\mobile{+34 636 600 144}
+\email{\href{mailto:irene.rodriguez@upf.edu}{\nolinkurl{irene.rodriguez@upf.edu}}}
+\homepage{irenerodriguezlopez.github.io}
+\github{irenerodriguez}
+\linkedin{IreneRodriguezL}
+\twitter{irewrl}
+
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \skype{skype-id}
+% \reddit{reddit-id}
+
+
+\usepackage{booktabs}
+
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+%------------------------------------------------------------------------------
+
+
+
+% Pandoc CSL macros
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{2em}
+\newenvironment{CSLReferences}[3] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\honortitlestyle{#1}}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\honordatestyle{#1}}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% 2019-02-14 Chris Umphlett - add flexibility to the document name in footer, rather than have it be static Curriculum Vitae
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%------------------------------------------------------------------------------
+
+
+
+\hypertarget{current-position}{%
+\section{Current position}\label{current-position}}
+
+\begin{cventries}
+    \cventry{Universitat Pompeu Fabra}{PhD Student in Political Science}{Barcelona, Spain}{2022 - Present}{\begin{cvitems}
+\item Thesis Project Title: Are we better? COVID-19 Pandemic effects on political attitudes and behavior.
+\item Supervisor: Dr. Toni Rodon.
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{education}{%
+\section{Education}\label{education}}
+
+\begin{cventries}
+    \cventry{Universitat de Barcelona}{Postgraduate Degree in Data Analysis}{Barcelona, Spain}{2021 - 2022}{\begin{cvitems}
+\item Expert in Data Analysis for Political Analysis and Public Administration
+\end{cvitems}}
+    \cventry{Universitat de Barcelona}{MSc in Political Analysis and Institutional Assessment}{Barcelona, Spain}{2020 - 2022}{\begin{cvitems}
+\item Thesis Title: The entry of Vox in the Spanish political institutions and its effect on citizens' attitudes towards immigration
+\item Supervisor: Dr. Albert Falcó-Gimeno
+\end{cvitems}}
+    \cventry{Universitat de Girona}{BA in Political Science and Administration}{Girona, Spain}{2016 - 2020}{\begin{cvitems}
+\item Bachelor's Thesis: Analysis of a deliberative mini-public in Madrid
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{research-interests}{%
+\section{Research interests}\label{research-interests}}
+
+\begin{cventries}
+    \cventry{Political behavior, public attitudes, political parties and radical right parties, quantitative methods, causal inference, quasi-experimental methods}{}{}{}{}\vspace{-4.0mm}
+\end{cventries}
+
+\hypertarget{participation-in-projects}{%
+\section{Participation in projects}\label{participation-in-projects}}
+
+\begin{cventries}
+    \cventry{Universitat Pompeu Fabra}{COVIDEU Project}{Volkswagen Steiftung}{2022 - Present}{\begin{cvitems}
+\item PI: Dr. Heike Klüver (Humboldt University of Berlin
+\item Website: www.covideu.info
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{awards-and-honors}{%
+\section{Awards and Honors}\label{awards-and-honors}}
+
+\begin{cventries}
+    \cventry{Universitat Pompeu Fabra}{Best Poster Award - Second place}{Barcelona, Spain}{2022}{\begin{cvitems}
+\item PhD Programme in Political and Social Sciences Doctoral Workshop
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{research}{%
+\section{Research}\label{research}}
+
+\hypertarget{working-on}{%
+\subsubsection*{Working on}\label{working-on}}
+\addcontentsline{toc}{subsubsection}{Working on}
+
+Rodríguez, I. (n.d.). \emph{The dangers of legitimation: how the
+presence of an RRP in parliament can increase antiimmigration
+attitudes}.
+
+Rodríguez, I. (n.d.). \emph{Has the Covid-19 pandemic made us better?
+The pandemic incidence and restrictions and their relationship with
+radical right voting}.
+
+\hypertarget{teaching}{%
+\section{Teaching}\label{teaching}}
+
+\begin{cventries}
+    \cventry{Universitat Pompeu Fabra}{Qualitative Methodology II (Seminars)}{Barcelona, Spain}{2022}{\begin{cvitems}
+\item BA in Political Science and Administration
+\end{cvitems}}
+    \cventry{Universitat Pompeu Fabra}{Crash course on R and Basic Statistics}{Barcelona, Spain}{2022}{\begin{cvitems}
+\item BA in Journalism
+\end{cvitems}}
+    \cventry{Universitat de Barcelona}{Seminar on radical right parties}{Barcelona, Spain}{2021}{\begin{cvitems}
+\item Universitat de l'Experiència
+\item Title of the seminar: Vox in the institutions. Parliamentary behavior and effects on public opinion
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{workshops-and-conferences}{%
+\section{Workshops and conferences}\label{workshops-and-conferences}}
+
+\begin{cventries}
+    \cventry{MPSA}{(forthcoming) Midwest Political Science Association}{Chicago, US}{2023}{\begin{cvitems}
+\item Presenting: Husstle and Tussle: How the UK's Vaccine Rollout Impacted EU Attitudes in EU Countries
+\item Contributing authors: Rodríguez, I., Herbig, L., Rodon, T., Klüver, H., Unan, A., Krawczyk, M., and Kuhn, T.
+\item Paaper part of the COVIDEU Project
+\end{cvitems}}
+    \cventry{RECSM Summer Methods School}{Big Data: Computational Analysis of Text}{Barcelona, Spain}{July 2022}{\begin{cvitems}
+\item Universitat Pompeu Fabra
+\item Instructor: Carlos Arcila (Universidad de Salamanca)
+\end{cvitems}}
+    \cventry{RECSM Summer Methods School}{Multilevel I: Introduction to Multilevel Models}{Barcelona, Spain}{July 2022}{\begin{cvitems}
+\item Universitat Pompeu Fabra
+\item Instructors: Carla Rampichini and Leonardo Grilli (Università di Firenze
+\end{cvitems}}
+    \cventry{Universitat Pompeu Fabra}{VI PhD Workshop on Empirical Research}{Barcelona, Spain}{June 2022}{\begin{cvitems}
+\item Organizer: Dr. Toni Rodon
+\end{cvitems}}
+    \cventry{Universiteit van Amsterdam}{I COVIDEU Project Workshop}{Amsterdam, NL}{June 2022}{\begin{cvitems}
+\item First workshop of the COVIDEU Project
+\end{cvitems}}
+    \cventry{Universitat Pompeu Fabra}{Doctoral Workshop}{Barcelona, Spain}{March 2022}{\begin{cvitems}
+\item UPhD Programme in Political and Social Sciences
+\end{cvitems}}
+    \cventry{Universitat Pompeu Fabra}{Working with Concepts in the Social Sciences}{Barcelona, Spain}{February 2022}{\begin{cvitems}
+\item PhD Programme in Political and Social Sciences
+\item Instructor: Frederic Schaffer (University of Massachussets)
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{skills}{%
+\section{Skills}\label{skills}}
+
+\hypertarget{programming-and-language-skills}{%
+\subsection{Programming and language
+skills}\label{programming-and-language-skills}}
+
+\begin{cvskills}
+  \cvskill
+    {Programming}
+    {R (Expert in Data Science)}
+  \cvskill
+    {Markup}
+    {Markdown/Rmarkdown, LaTeX}
+  \cvskill
+    {Natural}
+    {Spanish (native), Catalan (native), English (proficient), German (basic)}
+\end{cvskills}
+
+\hypertarget{research-skills}{%
+\subsection{Research skills}\label{research-skills}}
+
+\begin{cvskills}
+  \cvskill
+    {Quantitative Research}
+    {Regressions, quasi-experiments, natural experiments, DiD, RDD}
+  \cvskill
+    {Reproducible Research}
+    {GitHub, GitHub Desktop}
+\end{cvskills}
+
+
+
+\end{document}
