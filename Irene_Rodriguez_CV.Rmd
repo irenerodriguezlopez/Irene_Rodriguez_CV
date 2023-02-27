@@ -1,0 +1,131 @@
+---
+name: Irene
+surname: Rodríguez
+position: "PhD Candidate"
+address: "Department of Political and Social Sciences, Universitat Pompeu Fabra, Barcelona"
+phone: +34 636 600 144
+www: irenerodriguezlopez.github.io
+email: "irene.rodriguez@upf.edu"
+twitter: irewrl
+github: irenerodriguez
+linkedin: IreneRodriguezL
+headcolor: "414141"
+date: "`r format(Sys.time(), '%B %Y')`"
+output: 
+  vitae::awesomecv:
+    keep_tex: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tidyverse)
+library(tibble)
+```
+
+# Current position
+
+```{r current_position}
+tribble(~What, ~ When, ~ With, ~ Where, ~ Why,
+        "Universitat Pompeu Fabra", "2022 - Present", "PhD Student in Political Science", "Barcelona, Spain", c("Thesis Project Title: Are we better? COVID-19 Pandemic effects on political attitudes and behavior.", "Supervisor: Dr. Toni Rodon.")) %>%
+  detailed_entries(What, When, With, Where, Why)
+```
+
+
+# Education
+
+```{r education}
+tribble(~university, ~ years, ~ degree, ~ loc, ~ details,
+        "Universitat de Barcelona", "2021 - 2022", "Postgraduate Degree in Data Analysis", "Barcelona, Spain", "Expert in Data Analysis for Political Analysis and Public Administration",
+        "Universitat de Barcelona", "2020 - 2022", "MSc in Political Analysis and Institutional Assessment", "Barcelona, Spain", c("Thesis Title: The entry of Vox in the Spanish political institutions and its effect on citizens' attitudes towards immigration", "Supervisor: Dr. Albert Falcó-Gimeno"),
+        "Universitat de Girona", "2016 - 2020", "BA in Political Science and Administration", "Girona, Spain", "Bachelor's Thesis: Analysis of a deliberative mini-public in Madrid") %>%
+  tidyr::fill(-details) %>%
+  detailed_entries(university, years, degree, loc, details)
+```
+
+
+# Research interests
+
+```{r}
+tribble(~interests,
+         "Political behavior, public attitudes, political parties and radical right parties, quantitative methods, causal inference, quasi-experimental methods") %>%
+  detailed_entries(interests)
+```
+
+# Participation in projects
+
+```{r projects}
+tribble(~university, ~ years, ~ degree, ~ loc, ~ details,
+        "Universitat Pompeu Fabra", "2022 - Present", "COVIDEU Project", "Volkswagen Steiftung", c("PI: Dr. Heike Klüver (Humboldt University of Berlin", "Website: www.covideu.info")) %>%
+  tidyr::fill(-details) %>%
+  detailed_entries(university, years, degree, loc, details)
+```
+
+# Awards and Honors
+
+```{r awards}
+tribble(~what, ~ when, ~ with, ~where, ~why,
+        "Universitat Pompeu Fabra", "2022", "Best Poster Award - Second place", "Barcelona, Spain", c("PhD Programme in Political and Social Sciences Doctoral Workshop")) %>%
+  tidyr::fill(-why) %>%
+  detailed_entries(what, when, with, where, why)
+```
+
+# Research
+
+### Working on {.unnumbered}
+
+Rodríguez, I. (n.d.). *The dangers of legitimation: how the presence of an RRP in parliament can increase antiimmigration attitudes*.
+
+<font size="10"> Rodríguez, I. (n.d.). *Has the Covid-19 pandemic made us better? The pandemic incidence and restrictions and their relationship with radical right voting*. </font>
+
+
+# Teaching
+
+```{r}
+tribble(~what, ~when, ~with, ~where, ~why,
+        "Universitat Pompeu Fabra", "2022", "Qualitative Methodology II (Seminars)", "Barcelona, Spain", c("BA in Political Science and Administration"),
+        "Universitat Pompeu Fabra", "2022", "Crash course on R and Basic Statistics", "Barcelona, Spain", c("BA in Journalism"),
+        "Universitat de Barcelona", "2021", "Seminar on radical right parties", "Barcelona, Spain", c("Universitat de l'Experiència", "Title of the seminar: Vox in the institutions. Parliamentary behavior and effects on public opinion")) %>%
+  detailed_entries(what, when, with, where, why)
+```
+
+# Workshops and conferences
+
+```{r}
+tribble(~what, ~when, ~with, ~where, ~why,
+        "MPSA", "2023", "(forthcoming) Midwest Political Science Association", "Chicago, US", c("Presenting: Husstle and Tussle: How the UK's Vaccine Rollout Impacted EU Attitudes in EU Countries", "Contributing authors: Rodríguez, I., Herbig, L., Rodon, T., Klüver, H., Unan, A., Krawczyk, M., and Kuhn, T.", "Paaper part of the COVIDEU Project"),
+        "RECSM Summer Methods School", "July 2022", "Big Data: Computational Analysis of Text", "Barcelona, Spain", c("Universitat Pompeu Fabra", "Instructor: Carlos Arcila (Universidad de Salamanca)"),
+        "RECSM Summer Methods School", "July 2022", "Multilevel I: Introduction to Multilevel Models", "Barcelona, Spain", c("Universitat Pompeu Fabra", "Instructors: Carla Rampichini and Leonardo Grilli (Università di Firenze"),
+        "Universitat Pompeu Fabra", "June 2022", "VI PhD Workshop on Empirical Research", "Barcelona, Spain", c("Organizer: Dr. Toni Rodon"),
+        "Universiteit van Amsterdam", "June 2022", "I COVIDEU Project Workshop", "Amsterdam, NL", c("First workshop of the COVIDEU Project"),
+        "Universitat Pompeu Fabra", "March 2022", "Doctoral Workshop", "Barcelona, Spain", c("UPhD Programme in Political and Social Sciences"),
+        "Universitat Pompeu Fabra", "February 2022", "Working with Concepts in the Social Sciences", "Barcelona, Spain", c("PhD Programme in Political and Social Sciences", "Instructor: Frederic Schaffer (University of Massachussets)")) %>%
+  detailed_entries(what, when, with, where, why)
+```
+
+# Skills
+
+## Programming and language skills
+
+\begin{cvskills}
+  \cvskill
+    {Programming}
+    {R (Expert in Data Science)}
+  \cvskill
+    {Markup}
+    {Markdown/Rmarkdown, LaTeX}
+  \cvskill
+    {Natural}
+    {Spanish (native), Catalan (native), English (proficient), German (basic)}
+\end{cvskills}
+
+## Research skills
+
+\begin{cvskills}
+  \cvskill
+    {Quantitative Research}
+    {Regressions, quasi-experiments, natural experiments, DiD, RDD}
+  \cvskill
+    {Reproducible Research}
+    {GitHub, GitHub Desktop}
+\end{cvskills}
